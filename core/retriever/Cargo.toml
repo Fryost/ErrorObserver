@@ -1,0 +1,8 @@
+[package]
+name = "retriever"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+classifier = { path = "../classifier" }
+csv.workspace = true

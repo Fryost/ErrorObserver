@@ -1,0 +1,13 @@
+[package]
+name = "errorobserver"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+classifier = { path = "../classifier" }
+retriever = { path = "../retriever" }
+adapter = { path = "../adapter" }
+consensus = { path = "../consensus" }
+fixes = { path = "../fixes" }
+safety = { path = "../safety" }
+translator = { path = "../translator" }

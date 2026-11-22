@@ -1,0 +1,14 @@
+[workspace]
+resolver = "3"
+members = ["classifier", "retriever", "adapter", "consensus", "fixes", "safety", "translator", "cli"]
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+regex = "1"
+toml = "1"
+csv = "1"

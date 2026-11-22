@@ -1,0 +1,63 @@
+[[packages]]
+description = "Refresh the package lists"
+command = "sudo apt update"
+
+[[packages]]
+description = "Repair broken or half-installed packages"
+command = "sudo apt --fix-broken install"
+
+[[permissions]]
+description = "Check who owns the file and its permissions"
+command = "ls -l <file>"
+
+[[permissions]]
+description = "Run the command as administrator"
+command = "sudo <command>"
+
+[[disk_space]]
+description = "See how full each disk is"
+command = "df -h"
+
+[[disk_space]]
+description = "Remove cached package files"
+command = "sudo apt clean"
+
+[[missing_file]]
+description = "Check whether the command is installed"
+command = "which <command>"
+
+[[missing_file]]
+description = "Find the package that provides a file"
+command = "apt-file search <file>"
+
+[[network]]
+description = "Test the internet connection"
+command = "ping -c 3 1.1.1.1"
+
+[[network]]
+description = "Check DNS settings"
+command = "resolvectl status"
+
+[[boot]]
+description = "Regenerate the GRUB menu"
+command = "sudo update-grub"
+
+[[boot]]
+description = "Read errors from the last boot"
+command = "journalctl -b -1 -p err"
+
+[[display]]
+description = "List detected graphics drivers"
+command = "ubuntu-drivers devices"
+
+[[display]]
+description = "Read display server errors"
+command = "journalctl -b -p err | grep -i -E 'gdm|xorg|wayland'"
+
+[[crash]]
+description = "Read the program's crash messages"
+command = "journalctl -b -p err"
+
+[[crash]]
+description = "Check for a core dump"
+command = "coredumpctl list"
