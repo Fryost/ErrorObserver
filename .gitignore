@@ -5,3 +5,4 @@ output/
 models/
 viewer/target/
 core/target/
+*.exe
